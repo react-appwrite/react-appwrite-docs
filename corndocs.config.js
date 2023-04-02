@@ -9,16 +9,16 @@ module.exports = {
     algolia_index: "dev_corndocs",
   },
   project: {
-    name: "CornDocs",
-    url: "https://www.corndocs.com",
+    name: "React-Appwrite",
+    url: "https://react-appwrite.org/",
     github: {
-      repo: "https://github.com/dishwasher-detergent/CornDocs",
-      usesMain: false,
+      repo: "https://github.com/sanny-io/react-appwrite",
+      usesMain: true,
     },
     logo: {
-      src: "/static/logo.svg",
-      alt: "CornDocs Logo",
-      size: [80, 40],
+      src: "/static/logo.png",
+      alt: "React-Appwrite Logo",
+      size: [30, 30],
     },
     mainScreen: {
       showSearch: true,
@@ -27,9 +27,9 @@ module.exports = {
         custom: {
           path: "index",
         },
-        title: "Build documentation that will impress your friends and family.",
+        title: "React-Appwrite.",
         tagLine:
-          "CornDocs lets you easily create documentation to show off your projects!",
+          "Gorgeous library for integrating React with Appwrite.",
       },
     },
   },

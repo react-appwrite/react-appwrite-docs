@@ -19,6 +19,7 @@ function Sidebar() {
     fetch("/api/article")
       .then((res) => res.json())
       .then((data) => {
+        console.log(data);
         setData(data);
         setLoading(false);
       });
@@ -50,7 +51,7 @@ function Sidebar() {
                 )
                 .map((item: any, index) => (
                   <Content folders={item} key={index}>
-                    {item.metadata.title}
+                    {item.metadata.title ?? item.name}
                   </Content>
                 ))
             ) : (
