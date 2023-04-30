@@ -32,6 +32,7 @@ async function cerealize(raw: string): Promise<Post> {
       rehypePlugins: [slug],
       remarkPlugins: [remarkImageDimension, remarkGfm],
       format: "detect",
+      development: process.env.NODE_ENV === "development",
     },
   });
 
